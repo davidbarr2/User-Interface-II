@@ -189,13 +189,15 @@ footer{
     }
     header nav{
         flex-direction: column;
-        display: flex;
         justify-content: center;
         align-content: center;
+        align-items: center;
+        text-align: center;
+        width: 30%;
     }
     nav a{
-        font-size: 1.5rem;
-        border: 1px solid red;
+        font-size: 2rem;
+        width: 100%;
     }
 
     /* Middle (mobile) */
@@ -220,5 +222,10 @@ footer{
     /* Gallery (mobile) */
     .project{
         width: 47%;
+        font-size: 1.5rem;
+    }
+    .project p {
+        margin: 2% 0;
+
     }
 }
