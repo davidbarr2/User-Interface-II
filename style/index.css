@@ -8,7 +8,6 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	font-family: inherit;
 	font-weight: inherit;
 	font-style: inherit;
-	font-size: 100%;
 	outline: 0;
 	padding: 0;
 	margin: 0;
@@ -42,6 +41,7 @@ blockquote, q {
     padding: 0;
     margin: 0;
     max-width: 100%;
+    border: 1px solid grey;
 }
 
 /* General Styles */
@@ -65,12 +65,12 @@ nav{
     display: flex;
 }
 nav a {
-    display: inline-block;
     border: 1px solid black;
     padding: 1% 2%;
     text-decoration: none;
     background-color: whitesmoke;
     color: black;
+    font-size: 1rem;
 }
 a.active {
     background-color: black;
@@ -165,4 +165,35 @@ footer{
     justify-content: space-evenly;
     font-size: 2rem;
     text-decoration: none;
+}
+
+/* Media Queries */
+@media(max-width:800px){
+
+}
+
+@media(max-width:500px){
+    
+h1{
+    font-size: 6rem;
+}
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+        border: 1px solid red;
+    }
+
 }
