@@ -93,6 +93,9 @@ a.active {
     max-height: 10%;
     width: auto;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 .bio {
@@ -168,9 +171,9 @@ footer{
 }
 
 /* Media Queries */
-@media(max-width:800px){
-
-}
+/* @media(max-width:800px){
+    No changes necessary
+} */
 
 @media(max-width:500px){
     
