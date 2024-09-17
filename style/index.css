@@ -8,7 +8,6 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	font-family: inherit;
 	font-weight: inherit;
 	font-style: inherit;
-	font-size: 100%;
 	outline: 0;
 	padding: 0;
 	margin: 0;
@@ -65,12 +64,12 @@ nav{
     display: flex;
 }
 nav a {
-    display: inline-block;
     border: 1px solid black;
     padding: 1% 2%;
     text-decoration: none;
     background-color: whitesmoke;
     color: black;
+    font-size: 1rem;
 }
 a.active {
     background-color: black;
@@ -93,6 +92,9 @@ a.active {
     max-height: 10%;
     width: auto;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 .bio {
@@ -165,4 +167,64 @@ footer{
     justify-content: space-evenly;
     font-size: 2rem;
     text-decoration: none;
+}
+
+/* Media Queries */
+/* @media(max-width:800px){
+    No changes necessary
+} */
+
+@media(max-width:500px){
+    
+/* Header (mobile) */
+
+    h1{
+        font-size: 6rem;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        width: 30%;
+    }
+    nav a{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    /* Middle (mobile) */
+    .middle{
+        width: 95%;
+    }
+
+    /* Landing (mobile) */
+    .landing{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .landingImg{
+        max-width: 100%;
+    }
+    .bio {
+        width: 100%;
+        align-items: center;
+    }
+
+    /* Gallery (mobile) */
+    .project{
+        width: 47%;
+        font-size: 1.5rem;
+    }
+    .project p {
+        margin: 2% 0;
+
+    }
 }
